@@ -13,6 +13,8 @@ class Image implements MarkupInterface
 
     public function imageUrl(string $url): Image
     {
+        $this->fragment['imageUrl'] = $url;
+
         return $this;
     }
 

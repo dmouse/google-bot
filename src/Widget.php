@@ -17,6 +17,9 @@ class Widget
 
     public function textParagraph(string $text): Widget
     {
+        unset($this->fragment['image']);
+        unset($this->fragment['keyValue']);
+
         $this->fragment['textParagraph'] = [
             'text' => $text,
         ];
@@ -26,6 +29,9 @@ class Widget
 
     public function image(Image $image)
     {
+        unset($this->fragment['textParagraph']);
+        unset($this->fragment['keyValue']);
+
         $this->fragment['image'] = $image->getMarkup();
 
         return $this;
@@ -40,6 +46,9 @@ class Widget
 
     public function keyValue(KeyValue $keyValue): Widget
     {
+        unset($this->fragment['textParagraph']);
+        unset($this->fragment['image']);
+
         $this->fragment['keyValue'] = $keyValue->getMarkup();
 
         return $this;

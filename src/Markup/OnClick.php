@@ -13,6 +13,8 @@ class OnClick implements MarkupInterface
 
     public function action(FormAction $formAction): OnClick
     {
+        unset($this->fragment['openLink']);
+
         $this->fragment['action'] = $formAction->getMarkup();
 
         return $this;
@@ -20,7 +22,9 @@ class OnClick implements MarkupInterface
 
     public function openLink(string $url): OnClick
     {
-        $this->fragment['openLink'] = $url;
+        unset($this->fragment['action']);
+
+        $this->fragment['openLink']['url'] = $url;
 
         return $this;
     }
