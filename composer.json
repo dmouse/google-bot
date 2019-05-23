@@ -1,0 +1,22 @@
+{
+    "name": "dmouse/google-bot",
+    "description": "Wrapper to interact with Google Chat webhooks",
+    "type": "library",
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "David Flores",
+            "email": "dmousex@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dmouse\\GoogleBot\\": "src"
+        }
+    }
+}
