@@ -2,7 +2,7 @@
     "name": "dmouse/google-bot",
     "description": "Wrapper to interact with Google Chat webhooks",
     "type": "library",
-    "license": "MIT License",
+    "license": "MIT",
     "authors": [
         {
             "name": "David Flores",
