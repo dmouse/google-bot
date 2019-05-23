@@ -4,6 +4,11 @@ Build the json payload to create or update messages using the Hangout Chat Webho
 
 * [Official documentation](https://developers.google.com/hangouts/chat/reference/rest/v1/spaces.messages)
 
+## Install
+```$bash
+composer require dmouse/google-bot
+```
+
 ## Objects
 
 * Card
